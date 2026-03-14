@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -445,6 +450,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -462,6 +487,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Выбор темы оформления
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -548,6 +636,60 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Выбор темы оформления
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -564,9 +706,46 @@
 
 
 
-  <h1>Лабораторная работа 1</h1>
-
-
+<h1 id="1">Лабораторная работа 1</h1>
+<p><strong>Тема:</strong> Создание и развёртывание статического сайта на базе MkDocs 
+с публикацией на GitHub Pages</p>
+<hr />
+<h2 id="1_1">1. Цель работы</h2>
+<ul>
+<li>Освоить процесс создания статического сайта с использованием генератора документации MkDocs.</li>
+<li>Научиться организовывать структуру документации проекта (портфолио лабораторных работ).</li>
+<li>Изучить базовые принципы работы с системой контроля версий Git и платформой GitHub.</li>
+<li>Развернуть статический сайт с использованием механизма GitHub Pages на домене вида username.github.io.</li>
+<li>Освоить базовую настройку темы оформления и конфигурационного файла mkdocs.yml.</li>
+</ul>
+<hr />
+<h2 id="2">2. Задание</h2>
+<p>Создать публичный репозиторий на GitHub, настроить MkDocs с темой оформления,
+создать не менее 5 страниц и опубликовать сайт через GitHub Pages из каталога <code>/docs</code>.</p>
+<hr />
+<h2 id="3">3. Выбор темы оформления</h2>
+<p>Для оформления сайта выбрана тема <strong>Material for MkDocs</strong>.</p>
+<p>Обоснование выбора:</p>
+<ul>
+<li><strong>Тёмная цветовая схема (slate)</strong> — снижает нагрузку на глаза при длительной работе</li>
+<li><strong>Профессиональный внешний вид</strong> — тема используется в документации крупных 
+  реальных проектов: FastAPI, SQLModel</li>
+<li><strong>Поддержка русского языка</strong> — интерфейс и поиск корректно работают с кириллицей</li>
+<li><strong>Удобная навигация</strong> — вкладки сверху и боковое меню делают структуру сайта 
+  понятной и удобной для пользователя</li>
+<li><strong>Переключение тем</strong> — встроенная кнопка позволяет переключаться между 
+  тёмным и светлым режимом</li>
+<li><strong>Не требует дополнительной настройки</strong> — тема хорошо выглядит сразу 
+  после подключения</li>
+</ul>
+<hr />
+<h2 id="4">4. Выводы</h2>
+<p>В ходе выполнения лабораторной работы был освоен процесс создания 
+статических сайтов с помощью генератора MkDocs. Изучена структура 
+конфигурационного файла <code>mkdocs.yml</code>, настройка темы оформления Material 
+и организация навигации через параметр <code>nav</code>.</p>
+<p>Сайт успешно собран и опубликован через GitHub Pages.
+Он доступен по адресу: <a href="https://ciom14.github.io">https://ciom14.github.io</a></p>
 
 
 
