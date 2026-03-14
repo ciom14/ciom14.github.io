@@ -1,0 +1,38 @@
+site_name: Портфолио лабораторных работ
+site_description: Отчёты по лабораторным работам
+site_author: Мацеюк Артём Дмитриевич
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: slate
+      primary: black
+      accent: yellow
+      toggle:
+        icon: material/brightness-4
+        name: Тёмная тема
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+
+plugins:
+  - search:
+      lang: ru
+
+nav:
+  - Главная: index.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - Обзор: labs/index.md
+      - Лабораторная работа 1: labs/lab1.md
+      - Лабораторная работа 2: labs/lab2.md
+      - Лабораторная работа 3: labs/lab3.md
