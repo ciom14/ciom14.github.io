@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#2" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -473,6 +478,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -490,6 +515,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы и задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Реализация
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -548,6 +625,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Цель работы и задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Выводы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Реализация
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -564,9 +684,27 @@
 
 
 
-  <h1>Лабораторная работа 2</h1>
-
-
+<h1 id="2">Лабораторная работа 2</h1>
+<p><strong>Тема:</strong> Основы NumPy: массивы и векторные операции</p>
+<hr />
+<h2 id="1">1. Цель работы и задание</h2>
+<p>Реализовать набор функций для работы с массивами, матрицами, статистического анализа и визуализации данных с использованием библиотек NumPy, Pandas, Matplotlib и Seaborn. Все функции должны:</p>
+<ul>
+<li>проходить автоматические тесты (pytest); </li>
+<li>иметь аннотации типов (PEP-484);</li>
+<li>содержать docstring (PEP-257);</li>
+<li>соответствовать стилю PEP-8.</li>
+</ul>
+<hr />
+<h2 id="2_1">2. Выводы</h2>
+<p>В ходе лабораторной работы были реализованы и протестированы 17 функций, охватывающих ключевые возможности NumPy.</p>
+<p><strong>Массивы и матрицы.</strong> NumPy предоставляет удобные инструменты для создания и преобразования массивов (<code>arange</code>, <code>reshape</code>, <code>.T</code>). Операции выполняются без явных циклов, что делает код чище и быстрее по сравнению со стандартными списками Python.</p>
+<p><strong>Векторные и матричные операции.</strong> Операторы <code>+</code>, <code>*</code> и <code>@</code> работают поэлементно или как полноценное матричное умножение в зависимости от контекста. Это позволяет записывать математические выражения в естественной форме. <code>np.linalg</code> покрывает все базовые задачи линейной алгебры: определитель, обратная матрица, решение систем уравнений.</p>
+<p><strong>Статистический анализ.</strong> Связка <code>pandas</code> (загрузка CSV) + <code>numpy</code> (вычисления) оказалась удобной и лаконичной. Функции <code>mean</code>, <code>median</code>, <code>std</code>, <code>percentile</code> позволяют получить полную картину распределения данных буквально в несколько строк.</p>
+<p><strong>Визуализация.</strong> <code>matplotlib</code> и <code>seaborn</code> хорошо дополняют друг друга: первый — для базовых графиков (гистограмма, линейный), второй — для статистических (тепловая карта).</p>
+<hr />
+<h2 id="3">3.Реализация</h2>
+<p>Реализация доступна на <a href="https://github.com/ciom14/NumPy-Lab.git">GitHub</a></p>
 
 
 

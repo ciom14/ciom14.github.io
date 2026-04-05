@@ -30,4 +30,4 @@
 ---
 
 ## 3.Реализация
-[GitHub](https://github.com/ciom14/NumPy-Lab.git)
+Реализация доступна на [GitHub](https://github.com/ciom14/NumPy-Lab.git)
