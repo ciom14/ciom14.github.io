@@ -1,19 +1,15 @@
-pipelines:
-  - name: deploy
-    on:
-      push:
-        branches:
-          - main
-    jobs:
-      - name: build-and-deploy
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v3
-          - name: Setup Python
-            uses: actions/setup-python@v4
-            with:
-              python-version: '3.x'
-          - name: Install MkDocs
-            run: pip install mkdocs mkdocs-material
-          - name: Build site
-            run: cd source && mkdocs build -d ../docs
+on:
+  push:
+    - workflows: [deploy-workflow]
+      filter:
+        branches: ["main"]
+
+workflows:
+  deploy-workflow:
+    tasks:
+      - name: build-task
+        cubes:
+          - name: install-and-build
+            script:
+              - pip install mkdocs mkdocs-material
+              - cd source && mkdocs build -d ../docs
