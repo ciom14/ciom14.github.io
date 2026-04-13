@@ -1,4 +1,3 @@
-sites:
-  - name: portfolio-site
-    branch: main
-    path: /docs
+site:
+  root: docs
+  ref: main
