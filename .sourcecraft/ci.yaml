@@ -15,6 +15,7 @@ workflows:
               - cd source && mkdocs build -d ../docs
               - git config user.name ci-bot
               - git config user.email ci@bot.dev
+              - git checkout main
               - git add docs/
               - git commit -m "build auto deploy" || echo "Nothing to commit"
               - git push origin main
