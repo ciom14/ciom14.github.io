@@ -12,7 +12,7 @@ workflows:
           - name: install-and-build
             script:
               - pip install mkdocs mkdocs-material
-              - cd source && mkdocs build -d ../docs
+              - mkdocs build -d docs --config-file source/mkdocs.yml
               - git config user.name ci-bot
               - git config user.email ci@bot.dev
               - git checkout main
