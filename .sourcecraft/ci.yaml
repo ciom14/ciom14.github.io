@@ -13,8 +13,8 @@ workflows:
             script:
               - pip install mkdocs mkdocs-material
               - cd source && mkdocs build -d ../docs
-              - git config user.name "SourceCraft CI"
-              - git config user.email "ci@sourcecraft.dev"
-              - git add ../docs
-              - git commit -m "build: auto deploy via SourceCraft CI" || echo "Nothing to commit"
+              - git config user.name ci-bot
+              - git config user.email ci@bot.dev
+              - git add docs/
+              - git commit -m "build auto deploy" || echo "Nothing to commit"
               - git push origin main
